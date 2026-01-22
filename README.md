@@ -1,50 +1,41 @@
-# Welcome to your Expo app 👋
+# Tasteseer - Your Personal Food Oracle 🔮
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Tasteseer is a mobile app that recommends what to eat at restaurants based on your ingredient preferences. Using a friendly, conversational onboarding flow, it learns about your taste, allergies, and dietary restrictions to provide personalized meal recommendations for Breakfast, Lunch, and Dinner.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Chat-based Onboarding**: A conversational interface to set up your profile.
+- **Time-Aware Recommendations**: Highlighting the best spots for your current meal (Breakfast, Lunch, or Dinner).
+- **Personalized Matching**: Dishes ranked by how well they match your unique taste profile.
+- **Dietary Safeguards**: Automatically filters out dishes containing ingredients you're allergic to or avoid.
 
+## 🛠️ Tech Stack
+
+- **Framework**: [Expo](https://expo.dev) / React Native
+- **UI Library**: [HeroUI Native](https://heroui.com)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Navigation**: Expo Router
+- **Styling**: Tailwind CSS via [Uniwind](https://uniwind.dev)
+
+## 📦 Installation
+
+1. Clone the repository
+2. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. Start the project:
    ```bash
-   npx expo start
+   npm run ios # or android / web
    ```
 
-In the output, you'll find options to open the app in a
+## 📂 Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- `app/(onboarding)`: Chat-based setup flow.
+- `app/(tabs)`: Main application tabs (Home, Search, Profile).
+- `components/`: Reusable UI components.
+- `stores/`: Zustand state management for user preferences.
+- `services/`: Recommendation and logic services.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+Created with ❤️ for food lovers.
